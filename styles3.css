@@ -1,0 +1,412 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+body { /* definimos el fondo de la página */
+  width: 100%;
+  background-color: white;
+  font-family: 'Mitr', sans-serif;
+}
+
+/** HEADER **/
+#header-nav { /*para centrar en altura el texto, tengo que poner márgenes negativos y anchura de 70px en la barra  */
+  /*background-color: #f6b319; color amarillo*/
+  background-color: gray;
+  border: 2px solid #666;
+  border-radius: 0;
+  margin-left: 2px;
+  margin-top: -7px;
+}
+.navbar-brand {
+  padding-top: 15px;
+   margin-bottom: -1px;
+ }
+.navbar-brand h1 {
+  font-family: 'Mitr', serif;
+  /*color: #557c3e;*/
+  color: black;
+  font-size: 1.5em;
+  /* text-transform: uppercase; no queremos mayúsculas ni negrita
+  font-weight: bold; */
+  /*text-shadow: 1px 1px 1px #222; no queremos sombras en el texto*/
+  margin-top: 1px;
+  line-height: .75;
+  vertical-align: middle;
+/*text-transform: uppercase; no queremos todo en mayúsculas */
+/*font-weight: bold; no lo queremos en negrita */
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration:none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+#nav-list {
+  margin-top: -1px;
+}
+#nav-list a {  /*control sobre el desplegable del buttom */
+  /*color: #951C49;*/
+  background-color: white;
+  color: black;
+  border: 2px solid gray;
+  text-align: center;
+}
+#nav-list a:hover {
+  /*background: #E7E7E7;*/
+  background: white;
+}
+#nav-list a span {
+  font-size: 1.2em;
+}
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  /*border: 1px solid #61122f;*/
+  border: 1px solid #666;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+
+
+/********** Medium devices only **********/
+
+
+
+/********** Small devices only **********/
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 20px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    /*font-size: 4vw; /* 1vw = 1% of viewport width */
+    font-size: 1.5em;
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.1em;
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}
+
+
+h1 {
+  margin-top: 1px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  text-align: center;
+  font-color: black;
+  /*font-family: Helvetica;*/
+  /*font-family: 'Oxygen', sans-serif;*/
+  /*font-family: 'Pridi', serif;*/
+  /*font-family: 'Open Sans Condensed', sans-serif;*/
+  /*font-family: 'Cormorant Garamond', serif;*/
+  font-family: 'Mitr', sans-serif;
+}
+p { /* títulos de menús: Chicken, Beef, Shusi*/
+  /* margin-right: 20px;*/ 
+  width: auto;
+  height: auto;
+  /*font-family: Helvetica;*/
+  /*font-family: 'Oxygen', sans-serif;*/
+  /*font-family: 'Pridi', serif;*/
+  /*font-family: 'Open Sans Condensed', sans-serif;*/
+   /*font-family: 'Cormorant Garamond', serif;*/
+  font-family: 'Mitr', sans-serif;
+}
+nav{
+  /*font-family: Helvetica;*/
+  /*font-family: 'Oxygen', sans-serif;*/
+  /*font-family: 'Pridi', serif;*/
+  /*font-family: 'Open Sans Condensed', sans-serif;*/
+  /*font-family: 'Cormorant Garamond', serif;*/
+  font-family: 'Mitr', sans-serif;
+  font-size: 14px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+#p1 { /* menú Chicken*/
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+#p2 { /* menú Beef*/
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+#p3 { /* menú Sushi*/
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+ }
+
+/* Simple Responsive Framework. */
+.row {
+  width: 98%;
+  margin-left: 8px; /* este margen que se aplica a la izqda. afecta al lado derecho*/
+}
+
+/********** Medium:; devices DESTOPs  **********/
+@media  (min-width: 992px)   {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      /*border: 2px solid black;*/
+    background-color: gray;
+ 
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+    .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium:; devices TABLETs  **********/
+@media  (min-width: 768px) and (max-width: 992px)  {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+      /*border: 2px solid black;*/
+    background-color: gray;
+     
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+   width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media  (max-width: 768px)  {
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+      /*border: 2px solid black;*/
+    background-color: gray;
+    float: left;
+    margin-left: 25%;
+  }
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 30.33%;
+  }
+  .col-xs-8 {
+    width: 33.66%;
+  }
+  .col-xs-9 {
+    width: 37.99%;
+  }
+  .col-xs-10 {
+    width: 41.33%;
+  }
+  .col-xs-11 {
+    width: 45.66%;
+  }
+  .col-xs-12 {
+    width: 50%;
+  }
+}
